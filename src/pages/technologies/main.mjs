@@ -9,7 +9,7 @@ export const Technologies = ({}) => {
 			</div>
 			<div class="col-12 col-md-8">
 				${TechnologiesInfo({})}
-			</div
+			</div>
 		</div>
 	`;
 }
