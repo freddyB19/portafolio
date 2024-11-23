@@ -4,6 +4,7 @@ export const list_projects = [
 	{
 		image: `${path}/carrito.jpeg`,
 		title: 'Carrito de compras',
+		technologies: ['python', 'django', 'postgresql'],
 		description: `
 			Una aplicación diseñada en <b>Django</b> 
 			que te permite simular los carritos 
@@ -16,6 +17,7 @@ export const list_projects = [
 	{
 		image: `${path}/qr.jpeg`,
 		title: 'Generador de Codigo QR',
+		technologies: ['python', 'flask'],
 		description: `
 			Este generador de QR está diseñado
 			 en <b>Flask</b> y te permite obtener 
@@ -29,6 +31,7 @@ export const list_projects = [
 	{
 		image: `${path}/app_pdf.jpeg`,
 		title: 'Aplicación de PDF',
+		technologies: ['python', 'flask'],
 		description: `
 			Esta aplificación está diseñada en <b>Flask</b>
 			 y te permite realizar ciertas acciones 
@@ -41,6 +44,7 @@ export const list_projects = [
 	{
 		image: `${path}/scraping.jpeg`,
 		title: 'Scraping web',
+		technologies: ['selenium'],
 		description: `
 			Esta aplificación está diseñada con el framework de python <b>Scrapy</b>
 			Forma parte de un tutorial de intrucción sobre el scraping web.
@@ -52,6 +56,7 @@ export const list_projects = [
 	{
 		image: `${path}/todo_app.jpeg`,
 		title: 'Todo App',
+		technologies: ['python', 'django', 'postgresql'],
 		description: `
 			Una aplicación diseñada en <b>Django</b> y <b>Django Rest Framework</b>
 			para gestionar todo tipo de tareas.`,
@@ -62,6 +67,7 @@ export const list_projects = [
 	{
 		image: `${path}/vincent.jpeg`,
 		title: 'Vincent Van Gogh',
+		technologies: ['html5', 'css', 'javascript']
 		description: `
 			Un sitio web en honor a la biografía de Vincent Van Gogh. 
 			Desde su historia, pinturas y el museo que hoy en día le rinde homenaje.
