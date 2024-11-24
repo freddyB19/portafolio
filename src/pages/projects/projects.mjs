@@ -67,7 +67,7 @@ export const list_projects = [
 	{
 		image: `${path}/vincent.jpeg`,
 		title: 'Vincent Van Gogh',
-		technologies: ['html5', 'css', 'javascript']
+		technologies: ['html5', 'css', 'javascript'],
 		description: `
 			Un sitio web en honor a la biografía de Vincent Van Gogh. 
 			Desde su historia, pinturas y el museo que hoy en día le rinde homenaje.
