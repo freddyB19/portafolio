@@ -148,11 +148,11 @@ a:hover{
   background-size: cover;
 }
 .flip-card-back {
-  font-size: 1.25rem;
+  font-size: 1.10rem;
   text-align: center;
   display: grid;
   place-items: center;
-  padding: 32px;
+  padding: 25px;
   background-color: #B1CFC8;
   transform: rotateY(180deg);
 }
