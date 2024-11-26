@@ -111,7 +111,7 @@ export const ProjectUlkit = ({project, index}) => {
 
 export const ProjectBootstrap = ({project, index}) => {
 	return `
-	<div class="card mb-3 p-0" style="width: 18rem;">
+	<div class="card mb-3 p-0 card-hover" style="width: 18rem;">
 	  <img src="${project.image}" class="card-img-top w-100 h-100 p-0"alt="..." loading="lazy" style="max-width: 100%;">
 	  <div class="card-body">
 	   	<h5 class="card-title text-center fw-bold">${project.title}</h5>
