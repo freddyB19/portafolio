@@ -161,4 +161,12 @@ a:hover{
 }
 
 
-
+.card-hover {
+  will-change: transform;
+  transition: transform 450ms;
+}
+  
+.card-hover:hover {
+  transition: transform 125ms;
+  transform: translateY(-10px);
+}
