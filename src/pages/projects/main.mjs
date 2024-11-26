@@ -1,7 +1,5 @@
 import {list_projects} from "./projects.mjs"
-import {Project} from "../../utils/projects.mjs"
-import {ProjectUlkit} from "../../utils/projects.mjs"
-
+import {ProjectBootstrap} from "../../utils/projects.mjs"
 
 
 export const Projects = ({}) => {
@@ -9,13 +7,14 @@ export const Projects = ({}) => {
 		<div id="info-projects" style="margin-top: 4rem;">
 			<h2 class="text-center projects">Proyectos</h2>
 			<p class="colors"></p>
-			<div class="row row-cols-1 row-cols-md-3 mb-3 justify-content-evenly gap-3">
+			<div class="row row-cols-1 row-cols-md-2 mb-3 justify-content-center justify-content-md-around">
 				${
-					list_projects.map(project => 
+					list_projects.map((project, index) => 
 						`
-						${Project({project})}	
+						${ProjectBootstrap({project, index})}
 						`
-					).join('')}
+					).join('')
+				}
 
 			</div>
 		</div>
