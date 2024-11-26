@@ -2,11 +2,11 @@ const imagen = "../../../src/main/img/f5.jpeg";
 
 export const Usuario = ({}) => {
 	return `
-		<div class="d-flex flex-column mb-3">
+		<div class="d-flex flex-column mb-3 mt-3">
 			<div class="info-avatar mx-auto mt-0 pt-0">
 				<img src="${imagen}" class="avatar" al="Logotipo de Freddy Bolívar" />
 			</div>
-			<div class="info-contacto d-flex justify-content-around" style="margin-top:1em;">
+			<div class="info-contacto d-flex justify-content-around">
 
               	<a href="https://www.linkedin.com/in/freddy-bolivar-backend645" class="text-decoration-none text-dark" target="_blank">
 			      <span>Linkedin</span>
