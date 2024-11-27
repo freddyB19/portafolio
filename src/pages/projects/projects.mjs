@@ -10,7 +10,7 @@ export const list_projects = [
 			que te permite simular los carritos 
 			de compras de tiendas en línea.
 		`,
-		active: true,
+		active: false,
 		url: 'https://carrito-yz9k.onrender.com',
 		github: 'https://github.com/freddyB19/carrito',
 	},
