@@ -2,6 +2,19 @@ const path = "../../../src/main/img/projects";
 
 export const list_projects = [
 	{
+		image: `${path}/chatroom.jpeg`,
+		title: 'Chat-Rooms',
+		technologies: ['flask', 'socketio'],
+		description: `
+			Una pequeña aplicación de chat en donde tendras la posibilidad de
+			crear espacios (rooms) para interactuar con diferentes usuarios.<br>
+			Para esta aplicación se usó <b>Flask</b> y <b>Socket.IO</b> para su desarrollo. 
+		`,
+		active: true,
+		url: 'https://chat-rooms-yt0u.onrender.com',
+		github: 'https://github.com/freddyB19/chatroom.git'
+	},
+	{
 		image: `${path}/carrito.jpeg`,
 		title: 'Carrito de compras',
 		technologies: ['python', 'django', 'postgresql'],
@@ -33,7 +46,7 @@ export const list_projects = [
 		title: 'Aplicación de PDF',
 		technologies: ['python', 'flask'],
 		description: `
-			Esta aplificación está diseñada en <b>Flask</b>
+			Esta aplicación está diseñada en <b>Flask</b>
 			 y te permite realizar ciertas acciones 
 			con archivos pdf, como extraer texto, imagenes entre otras cosas.
 		`,
@@ -46,8 +59,9 @@ export const list_projects = [
 		title: 'Scraping web',
 		technologies: ['selenium'],
 		description: `
-			Esta aplificación está diseñada con el framework de python <b>Scrapy</b>
-			Forma parte de un tutorial de intrucción sobre el scraping web.
+			Esta aplicación está diseñada con el framework de python <b>Scrapy</b>.
+			Forma parte de un tutorial de intrucción sobre el scraping web,
+			donde se estrae información de un sitio web muy <i>intersante</i>.
 		`,
 		active: true,
 		url: 'https://web-scrapy-cia.vercel.app/',
