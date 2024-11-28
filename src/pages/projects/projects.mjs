@@ -60,7 +60,7 @@ export const list_projects = [
 		technologies: ['python'],
 		description: `
 			Esta aplicación está diseñada con el framework de python <b><a href="https://scrapy.org/"  target="_blank">Scrapy</a></b>.
-			Forma parte de un tutorial de intrucción sobre el scraping web,
+			Forma parte de un tutorial de introducción sobre el scraping web,
 			donde se estrae información desde la <a  target="_blank" href="https://www.cia.gov/readingroom/historical-collections">Cia.gov</a>.
 		`,
 		active: true,
