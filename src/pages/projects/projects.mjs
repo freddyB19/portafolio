@@ -57,11 +57,11 @@ export const list_projects = [
 	{
 		image: `${path}/scraping.jpeg`,
 		title: 'Scraping web',
-		technologies: ['selenium'],
+		technologies: ['python'],
 		description: `
-			Esta aplicación está diseñada con el framework de python <b>Scrapy</b>.
+			Esta aplicación está diseñada con el framework de python <b><a href="https://scrapy.org/"  target="_blank">Scrapy</a></b>.
 			Forma parte de un tutorial de intrucción sobre el scraping web,
-			donde se estrae información de un sitio web muy <i>intersante</i>.
+			donde se estrae información desde la <a  target="_blank" href="https://www.cia.gov/readingroom/historical-collections">Cia.gov</a>.
 		`,
 		active: true,
 		url: 'https://web-scrapy-cia.vercel.app/',
