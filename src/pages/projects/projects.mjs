@@ -15,6 +15,19 @@ export const list_projects = [
 		github: 'https://github.com/freddyB19/chatroom.git'
 	},
 	{
+		image: `${path}/web_scraper.jpeg`,
+		title: 'Scraper News',
+		technologies: ['python', 'vite'],
+		description:`
+			Este scraper permite obtener información de diferentes páginas web
+			sobre noticias ( información sobre tecnología e IA) y algunas páginas
+			sobre videojuegos.
+		`,
+		active: true,
+		url: 'https://web-scraper-games.vercel.app/',
+		github: 'https://github.com/freddyB19/scraper-games.git'
+	},	
+	{
 		image: `${path}/carrito.jpeg`,
 		title: 'Carrito de compras',
 		technologies: ['python', 'django', 'postgresql'],
