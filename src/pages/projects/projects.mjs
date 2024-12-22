@@ -74,7 +74,7 @@ export const list_projects = [
 		description: `
 			Esta aplicación está diseñada con el framework de python <b><a href="https://scrapy.org/"  target="_blank">Scrapy</a></b>.
 			Forma parte de un tutorial de introducción sobre el scraping web,
-			donde se estrae información desde la <a  target="_blank" href="https://www.cia.gov/readingroom/historical-collections">Cia.gov</a>.
+			donde se extrae información desde la <a  target="_blank" href="https://www.cia.gov/readingroom/historical-collections">Cia.gov</a>.
 		`,
 		active: true,
 		url: 'https://web-scrapy-cia.vercel.app/',
