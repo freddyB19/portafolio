@@ -1,6 +1,20 @@
 const path = "../../../src/main/img/projects"; 
 
+
 export const list_projects = [
+	{
+		image: `${path}/market_analytics.png`,
+		title: 'Josmo market analytics',
+		technologies: ['streamlit', 'pandas'],
+		description: `
+			Este proyecto es una herramienta de Inteligencia de Negocios (BI) diseñada 
+			para visualizar y analizar el posicionamiento de los productos de  <b>Josmo Shoes</b>
+			en el mercado digital.
+		`,
+		active: true,
+		url: 'https://josmo-market-analytics-a2zv2n6s84facpj7dulsnc.streamlit.app/',
+		github: 'https://github.com/freddyB19/josmo-market-analytics.git'
+	},
 	{
 		image: `${path}/chatroom.jpeg`,
 		title: 'Chat-Rooms',
