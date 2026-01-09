@@ -69,7 +69,7 @@ export const list_projects = [
 		github: 'https://github.com/freddyB19/genqr',
 	},
 	{
-		image: `${path}/app_pdf.jpeg`,
+		image: `${path}/app_pdf.png`,
 		title: 'Aplicación de PDF',
 		technologies: ['python', 'flask'],
 		description: `
