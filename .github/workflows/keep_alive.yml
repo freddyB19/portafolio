@@ -1,0 +1,32 @@
+name: Render Keep Alive
+
+on:
+  schedule:
+    # Se ejecuta cada 14 minutos (Render duerme a los 15 min de inactividad)
+    - cron: '*/14 * * * *'
+  workflow_dispatch: # Permite ejecutarlo manualmente para probar
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Despertando aplicaciones
+        run: |
+          # Genera un número aleatorio entre 0 y 60 segundos
+          DELAY=$(( ( RANDOM % 60 )  ))
+          echo "Esperando $DELAY segundos para evitar patrones..."
+          sleep $DELAY
+          
+          # Lista aquí todas las URLs de tus apps en Render
+          URLS=(
+            "https://portafolio-uiib.onrender.com"
+            "https://chat-rooms-yt0u.onrender.com"
+            "https://carrito-yz9k.onrender.com"
+            "https://genqr-flask.onrender.com"
+            "https://pdfapp-qs52.onrender.com"
+          )
+          
+          for url in "${URLS[@]}"; do
+            echo "Haciendo ping a: $url"
+            curl -sL --connect-timeout 20 "$url" > /dev/null
+          done
