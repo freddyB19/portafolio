@@ -2,19 +2,22 @@ name: Render Keep Alive
 
 on:
   schedule:
-    # Se ejecuta cada 14 minutos (Render duerme a los 15 min de inactividad)
-    - cron: '*/14 * * * *'
+    # Ajustamos a cada 10 min para ganar al delay de GitHub
+    - cron: '*/10 * * * *'
   workflow_dispatch: # Permite ejecutarlo manualmente para probar
 
 jobs:
   ping:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout (Mantiene el repo activo)
+        uses: actions/checkout@v4
+        
       - name: Despertando aplicaciones
         run: |
           # Genera un número aleatorio entre 0 y 60 segundos
           DELAY=$(( ( RANDOM % 60 )  ))
-          echo "Esperando $DELAY segundos para evitar patrones..."
+          
           sleep $DELAY
           
           # Lista aquí todas las URLs de tus apps en Render
