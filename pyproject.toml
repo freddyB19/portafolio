@@ -5,13 +5,32 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.11"
 dependencies = [
-    "blinker==1.7.0",
-    "click==8.1.7",
-    "flask==3.0.3",
-    "gunicorn==22.0.0",
-    "itsdangerous==2.2.0",
-    "jinja2==3.1.3",
-    "markupsafe==2.1.5",
-    "packaging==24.0",
-    "werkzeug==3.0.2",
+    "blinker>=1.7.0",
+    "click>=8.1.7",
+    "flask>=3.0.3",
+    "gunicorn>=22.0.0",
+    "itsdangerous>=2.2.0",
+    "jinja2>=3.1.3",
+    "markupsafe>=2.1.5",
+    "packaging>=24.0",
+    "python-dotenv>=1.2.1",
+    "werkzeug>=3.0.2",
 ]
+
+[dependency-groups]
+dev = [
+    "poethepoet>=0.40.0",
+]
+
+[tool.poe.tasks]
+dev-flask = "flask run --debug -h 0.0.0.0 -p 5000"
+dev-guni = "gunicorn app:app"
+
+# [build-system]
+# requires = ["uv_build>=0.9.30,<0.10.0"]
+# build-backend = "uv_build"
+
+# [tool.uv.build-backend]
+# module-name = "src"
+# module-root = ""
+# namespace = true

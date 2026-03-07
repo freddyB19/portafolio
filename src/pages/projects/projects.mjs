@@ -25,7 +25,7 @@ export const list_projects = [
 			Para esta aplicación se usó <b>Flask</b> y <b>Socket.IO</b> para su desarrollo. 
 		`,
 		active: true,
-		url: 'https://chat-rooms-yt0u.onrender.com',
+		url: 'https://chatroom-65da.onrender.com',
 		github: 'https://github.com/freddyB19/chatroom.git'
 	},
 	{
